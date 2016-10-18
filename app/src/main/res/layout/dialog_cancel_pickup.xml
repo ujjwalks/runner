@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="false"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:text="Cancel Pickup"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Reason"
+            android:textSize="15sp"
+            android:gravity="center_vertical|left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <TextView
+            android:id="@+id/tvReason1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Customer doesn’t want to return the parcel anymore"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/btn_light_theme"
+            android:textColor="@color/dark_grey"/>
+
+        <TextView
+            android:id="@+id/tvReason2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Item not in suitable condition to be returned"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/btn_light_theme"
+            android:textColor="@color/dark_grey"/>
+
+        <TextView
+            android:id="@+id/tvReason3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Customer not reachable after more than 2 attempts"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/btn_light_theme"
+            android:textColor="@color/dark_grey"/>
+
+        <TextView
+            android:id="@+id/tvReason4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Address not traceable/accessible"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/btn_light_theme"
+            android:textColor="@color/dark_grey"/>
+
+        <TextView
+            android:id="@+id/tvReason5"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Customer not at home after more than 2 attempts"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/btn_light_theme"
+            android:textColor="@color/dark_grey"/>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etReason"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:hint="Other Reason"
+            android:text=""
+            android:textSize="18sp"
+            android:inputType="text"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</ScrollView>

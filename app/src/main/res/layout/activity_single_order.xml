@@ -1,0 +1,377 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="in.agilo.partner.runner.activities.SingleOrder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llItem"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Item Name"
+                android:padding="10dp"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:background="@drawable/btn_light_theme"
+                android:textColor="@color/black"
+                android:id="@+id/tvItem"
+                android:layout_centerHorizontal="true" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:text="Customer"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvName"
+                            android:layout_centerHorizontal="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:text="Reason"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvReason"
+                            android:layout_centerHorizontal="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:text="Shipping Id"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvShipping"
+                            android:layout_centerHorizontal="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:text="AWB"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvAWB"
+                            android:layout_centerHorizontal="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:text="Time"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvTime"
+                            android:layout_centerHorizontal="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:text="Brand"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvBrand"
+                            android:layout_centerHorizontal="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="13sp"
+                            android:text="Category"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            android:padding="10dp"
+                            android:clickable="true"
+                            android:background="@drawable/btn_light_theme"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvCategory"
+                            android:layout_centerHorizontal="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Address"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/btn_light_theme"
+                android:textColor="@color/black"
+                android:id="@+id/tvAddress"
+                android:layout_centerHorizontal="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llItemActions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Call Customer"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@drawable/btn_light_theme"
+                android:textColor="@color/black"
+                android:id="@+id/btnCall"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="PICKUP"
+                    android:padding="2dp"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_light_theme"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/btnPickUp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="CANCEL"
+                    android:padding="2dp"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_light_theme"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/btnCancel"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="RESCHEDULE"
+                    android:padding="2dp"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_light_theme"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/btnReschedule"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="OUT OF HOME"
+                    android:padding="2dp"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_light_theme"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/btnOOH"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
